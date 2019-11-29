@@ -1,7 +1,10 @@
-<h1>Welcome to fancy cocktails!</h1>
+<div class="container">
 
-<% @cocktails.each do |c| %>
-<li><%= link_to c.name, cocktail_path(c.id) %></li>
-<% end %>
+  <h1>Cocktail Chemist!</h1>
 
-<%= link_to "Add a new cocktail!", new_cocktail_path %>
+  <% @cocktails.each do |c| %>
+  <li><%= link_to c.name, cocktail_path(c.id) %></li>
+  <% end %>
+
+  <%= link_to "Add a new cocktail!", new_cocktail_path %>
+</div>
