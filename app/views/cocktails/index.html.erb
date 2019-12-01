@@ -6,6 +6,7 @@
       <% @cocktails.each do |c| %>
         <div class="card">
           <div class="centered-a"><%= link_to c.name, cocktail_path(c.id) %></div>
+          <div class="delete"><%= link_to "remove", cocktail_path(c.id), method: :delete %></div>
         </div>
       <% end %>
     </div>
