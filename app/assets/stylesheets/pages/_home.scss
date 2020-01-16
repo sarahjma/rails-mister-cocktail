@@ -1,49 +1,37 @@
-body {
-  background: url(https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3371&q=80);
-  background-size: cover;
-  background-attachment: fixed;
+.home-header {
+  margin-top: 200px;
 }
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-h1 {
+.home-h1 {
   display: flex;
   justify-content: center;
-  font-family: 'Bebas Neue', cursive;
   color: white;
-  margin-top: 50px;
+  align-item: center;
+  font-size: 167px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10px;
 }
 
-.card {
-  background: white;
-  height: 150px;
-  // border: 1px solid white;
-  margin: 15px 8px;
-  background-size: cover;
-  text-align: center;
+.home-h2 {
+  display: flex;
+  justify-content: center;
+  font-family: $headers-font;
+  color: white;
+  font-size: 23px;
 }
 
-.centered-a {
-  margin: auto;
+#home-button {
+  display: flex;
+  justify-content: center;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 8px;
+.to-index {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 8px 56px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
-
-.btn-add {
-  text-align: center;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-}
-
 
 
 

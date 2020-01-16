@@ -1,12 +1,13 @@
 <div class="container">
 
-  <h1>Welcome to the Cocktail Chemist</h1>
+  <h1>Your Cocktails</h1>
   <div class="cards">
     <div class="row">
       <% @cocktails.each do |c| %>
         <div class="card">
           <div class="centered-a"><%= link_to c.name, cocktail_path(c.id) %></div>
           <div class="delete"><%= link_to "remove", cocktail_path(c.id), method: :delete %></div>
+          <%= cl_image_tag cocktail.photo %>
         </div>
       <% end %>
     </div>
