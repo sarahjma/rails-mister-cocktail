@@ -4,10 +4,10 @@
   <div class="cards">
     <div class="row">
       <% @cocktails.each do |c| %>
-        <div class="card">
+        <% background_url = c.photo %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
           <div class="centered-a"><%= link_to c.name, cocktail_path(c.id) %></div>
           <div class="delete"><%= link_to "remove", cocktail_path(c.id), method: :delete %></div>
-          <%= cl_image_tag cocktail.photo %>
         </div>
       <% end %>
     </div>

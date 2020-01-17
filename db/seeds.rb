@@ -10,8 +10,8 @@ Cocktail.destroy_all
 Ingredient.destroy_all
 # Dose.destroy_all
 
-Cocktail.create(name: "Mojito", photo: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")
-Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Mojito", photo: 'https://images.unsplash.com/photo-1455621481073-d5bc1c40e3cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2683&q=80')
+Cocktail.create(name: "Bloody Mary", photo: 'https://images.unsplash.com/photo-1541546339599-ecdbfcf77378?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2068&q=80')
 Cocktail.create(name: "Cuba Libre")
 Cocktail.create(name: "Long Island Ice Tea")
 Cocktail.create(name: "Margartia")
