@@ -1,5 +1,5 @@
 body {
-  background: url(https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3371&q=80);
+  background: url(https://images.unsplash.com/photo-1544701545-b2dc4c02ffd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -19,8 +19,8 @@ h1 {
 
 .card {
   background: white;
-  height: 150px;
-  // border: 1px solid white;
+  height: 250px;
+  border: .5px solid white;
   margin: 15px 8px;
   background-size: cover;
   text-align: center;
@@ -28,6 +28,13 @@ h1 {
 
 .centered-a {
   margin: auto;
+}
+
+.name {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .row {
@@ -38,8 +45,13 @@ h1 {
 
 .btn-add {
   text-align: center;
+  margin-top: 45px;
+  margin-bottom: 60px;
   a {
     text-decoration: none;
     color: white;
+    border: .5px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
   }
 }

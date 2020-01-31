@@ -4,16 +4,14 @@
   <div class="cards">
     <div class="row">
       <% @cocktails.each do |c| %>
-        <% background_url = c.photo %>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
-          <div class="centered-a"><%= link_to c.name, cocktail_path(c.id) %></div>
-          <div class="delete"><%= link_to "remove", cocktail_path(c.id), method: :delete %></div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('<%= c.photo %>');">
+          <div class="centered-a"><%= link_to c.name, cocktail_path(c.id), class: "name" %></div>
         </div>
       <% end %>
     </div>
   </div>
 
   <div class="btn-add">
-    <%= link_to "Add a new cocktail!", new_cocktail_path %>
+    <%= link_to "Add a new cocktail!", new_cocktail_path, class: "btn-add" %>
   </div>
 </div>

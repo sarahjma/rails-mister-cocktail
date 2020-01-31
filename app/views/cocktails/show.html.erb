@@ -1,13 +1,14 @@
 <div class="container">
-  <div class="card">
-    <h2><%= @cocktail.name %></h2>
-
-    <% @cocktail.doses.each do |dose| %>
-      <%= dose.description %>
-      <%= dose.ingredient.name %>
-      <%= link_to "Remove", dose_path(dose), method: :delete %>
-    <% end %>
+  <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('<%= @cocktail.photo %>');">
+    <div class="centered-a">
+      <h2 class="name"><%= @cocktail.name %></h2>
+    </div>
   </div>
+  <% @cocktail.doses.each do |dose| %>
+    <%= dose.description %>
+    <%= dose.ingredient.name %>
+    <%= link_to "Remove", dose_path(dose), method: :delete %>
+  <% end %>
 
   <p>Add an ingredient and it's dosage</p>
 
@@ -18,5 +19,6 @@
     <%= f.button :submit %>
   <% end %>
 
+ <div class="delete"><%= link_to "remove", cocktail_path(@cocktail.id), method: :delete %></div>
   <%= link_to "Back to list of cocktails!", cocktails_path %>
 </div>
